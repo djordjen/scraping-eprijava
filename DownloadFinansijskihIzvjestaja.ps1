@@ -20,14 +20,13 @@ $finStatements = $response.data
 
 # Pronadjeni sljedeci finansijski izvjestaji
 Write-Host "Pronadjeno $($finStatements.length) finansijskih izvjestaja"
-# $finStatements
 
 # Download svakog pronadjenog finansijskog izvjestaja
-Write-Host "`nDownload finansijskih izvjestaja..."
+Write-Host "`nDownload finansijskih izvjestaja:"
 foreach ($finStatement in $finStatements) {
 	$no = $finStatement.FinStatementNumber
 	$year = $finStatement.Year
-	Write-Host "Download izvjestaja br. $($no) za godinu $($year)"
+	Write-Host "- Download izvjestaja br. $($no) za godinu $($year)"
 	$response = Invoke-RestMethod "https://eprijava.tax.gov.me/TaxisPortal/FinancialStatement/Details?rbr=$($no)" -Method 'POST' -Headers $headers
 	
 	# Izvjestaji ce biti sacuvani u formatu: <PIB>-<GODINA>.htm
