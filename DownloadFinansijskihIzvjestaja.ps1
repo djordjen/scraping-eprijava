@@ -14,12 +14,12 @@ foreach ($taxpayer in $taxpayers) {
 }
 
 # Pretraga liste finansijskih izvjestaja
-Write-Host "`nPretraga liste finansijskih izvjestaja"
+Write-Host "`nPretraga liste finansijskih izvjestaja:"
 $response = Invoke-RestMethod "https://eprijava.tax.gov.me/TaxisPortal/FinancialStatement/TaxPayerStatementsList?PIB=$($pib)&take=20&skip=0&page=1&pageSize=20" -Method 'POST' -Headers $headers
 $finStatements = $response.data
 
 # Pronadjeni sljedeci finansijski izvjestaji
-Write-Host "Pronadjeno $($finStatements.length) finansijskih izvjestaja"
+Write-Host "- Pronadjeno $($finStatements.length) finansijskih izvjestaja"
 
 # Download svakog pronadjenog finansijskog izvjestaja
 Write-Host "`nDownload finansijskih izvjestaja:"
