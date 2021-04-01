@@ -3,11 +3,11 @@ Prikupljanje finansijskih izvjestaja sa sajta eprijava.tax.gov.me
 
 ---
 
-# Pokretanje
+## Pokretanje
 
 U fajlu **DownloadFinansijskihIzvjestaja.ps1** PIB se moze promijeniti na odgovarajuci (zadati PIB je za pravno lice **Azalea Maritime**, kao primjer), a skripta se potom moze pokrenuti putem batch fajla **Start.bat**.
 
-# Output
+## Output
 
 Ispis na ekranu ce biti nalik sljedecem:
 
@@ -30,6 +30,6 @@ Download izvjestaja br. 5359/2014 za godinu 2014
 Gotovo.
 ```
 
-# Rezultat
+## Rezultat
 
 Program ce prikupiti sve finansijske izvjestaje za pronadjeno pravno lice i smjestiti u lokalni direktorijum u formatu: `PIB-GODINA.htm`.
