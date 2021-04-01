@@ -15,8 +15,8 @@ Ispis na ekranu ce biti nalik sljedecem:
 Pretraga po PIB-u: 02347806
 Pronadjen: 02347806 - "AZALEA POMORSKI TRENING CENTAR" D.O.O. HERCEG NOVI
 
-Pretraga liste finansijskih izvjestaja
-Pronadjeno 7 finansijskih izvjestaja
+Pretraga liste finansijskih izvjestaja:
+- Pronadjeno 7 finansijskih izvjestaja
 
 Download finansijskih izvjestaja:
 - Download izvjestaja br. 54244/2020 za godinu 2020
